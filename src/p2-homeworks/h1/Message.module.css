@@ -1,8 +1,10 @@
 .blockMessageName {
+    font-weight: bold;
     color: darkslateblue;
 }
 
 .blockMessageText {
+    word-wrap: break-word;
     color: #ffffff;
 }
 
@@ -35,7 +37,7 @@
 
 .tail {
     background-color: #60f807;
-    border-radius: 0vw 0vh 5vw 0vw;
+    border-radius: 0 0 5vw 0;
 }
 
 .blockMessage {
