@@ -1,0 +1,69 @@
+.blockMessageName {
+    color: darkslateblue;
+}
+
+.blockMessageText {
+    color: #ffffff;
+}
+
+.blockMessageTime {
+    display: grid;
+    color: #43640c;
+    align-items: end;
+    justify-items: center;
+    margin: 10%;
+}
+
+.blockMessageItem {
+    display: grid;
+    grid-template-rows: 30% 70%;
+    margin: 2%;
+    align-items: center;
+}
+
+.ava > img {
+    border-radius: 50%;
+    height: 50%;
+    width: 70%;
+}
+
+.ava {
+    display: grid;
+    align-items: end;
+    justify-items: center;
+}
+
+.tail {
+    background-color: #60f807;
+    border-radius: 0vw 0vh 5vw 0vw;
+}
+
+.blockMessage {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.blockMessageWrapper {
+    border-radius: 5px 5px 5px 5px;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    background-color: black;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.message {
+    display: grid;
+    height: 100px;
+    width: 400px;
+    background-color: #60f807;
+    padding: 5px;
+}
+
+.hw {
+    display: grid;
+    justify-content: center;
+}
