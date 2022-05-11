@@ -2,7 +2,13 @@
 
 }
 
+.button {
+    background: blue;
+    color: white;
+}
+
 .good {
+    margin-top: 2px;
     border: 2px blue solid;
     border-radius: 5px;
 }
@@ -12,8 +18,32 @@
     border-radius: 5px;
 }
 
+.onFocus:focus-visible {
+    border: 2px blue solid;
+    border-radius: 5px;
+    outline-color: blue;
+    background: lightgray;
+}
+
+.spanClass {
+    color: red;
+}
+
 .error {
     border: 2px solid red;
     border-radius: 5px;
 
+}
+
+.preWrapper {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.preClass {
+    border: 2px yellow solid;
+    border-radius: 5px;
 }

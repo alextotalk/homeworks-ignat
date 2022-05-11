@@ -16,12 +16,12 @@ const Greeting: React.FC<GreetingPropsType> = (
     let inputClass = error === '' ? s.good : s.error // need to fix with (?:)
 
     return (
-        <div>
+        <div className={s.preWrapper}>
             <input value={name} onChange={setNameCallback}
                    className={`${inputClass} ${s.onFocus}`}/>
-            <span>{error}</span>
-            <button onClick={addUser} className={inputClass}>add</button>
-            <pre> {totalUsers} - Count user names !</pre>
+            <span className={error && s.spanClass}>{error}</span>
+            <button disabled={!!error} onClick={addUser} className={`${inputClass} ${s.button}`}>add User</button>
+            <pre className={s.preClass}> {totalUsers} - Count user names !</pre>
 
         </div>
     )
