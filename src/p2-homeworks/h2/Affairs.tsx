@@ -2,8 +2,10 @@ import React from 'react'
 import Affair from './Affair'
 import {AffairType, FilterType} from './HW2'
 import m from './Affairs.module.css'
+import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 
 type AffairsPropsType = { // need to fix any
+
     data: AffairType[]
     setFilter: React.Dispatch<React.SetStateAction<FilterType>>
     deleteAffairCallback: (_id: number) => void
@@ -34,15 +36,15 @@ function Affairs(props: AffairsPropsType) {
     }
 
     return (
-        <div className={m.Affairs}>
+        <div className={m.affairs}>
 
             {mappedAffairs}
 
             <div className={m.button}>
-                <button onClick={setAll}>All</button>
-                <button onClick={setHigh}>High</button>
-                <button onClick={setMiddle}>Middle</button>
-                <button onClick={setLow}>Low</button>
+                <SuperButton onClick={setAll}>All</SuperButton>
+                <SuperButton onClick={setHigh}>High</SuperButton>
+                <SuperButton onClick={setMiddle}>Middle</SuperButton>
+                <SuperButton onClick={setLow}>Low</SuperButton>
             </div>
         </div>
     )

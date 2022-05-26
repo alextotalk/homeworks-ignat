@@ -8,4 +8,24 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    align-content: space-around;
+    justify-content: space-between;
+}
+
+.affairs {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-content: flex-end;
+    align-items: stretch;
+}
+
+.wrapperClass {
+    display: flex;
+    justify-content: center;
+}
+
+.affairClass {
+    display: flex;
+    justify-content: space-between;
 }

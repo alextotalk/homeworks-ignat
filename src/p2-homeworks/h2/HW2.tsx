@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
 import Affairs from './Affairs'
+import m from './Affairs.module.css'
+
 
 export type AffairPriorityType = 'high' | 'middle' | 'low'
 export type AffairType = {
@@ -46,12 +48,13 @@ function HW2() {
         <div>
             <hr/>
             homeworks 2
-            <Affairs
-                data={filteredAffairs}
-                setFilter={setFilter}
-                deleteAffairCallback={deleteAffairCallback}
-            />
-
+            <div className={m.wrapperClass}>
+                <Affairs
+                    data={filteredAffairs}
+                    setFilter={setFilter}
+                    deleteAffairCallback={deleteAffairCallback}
+                />
+            </div>
             <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeAffairs/>*/}

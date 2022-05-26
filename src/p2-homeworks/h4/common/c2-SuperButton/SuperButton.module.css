@@ -24,7 +24,7 @@
 
 .black:hover {
     box-shadow: 3px 2px 4px gray;
-    opacity: 80%;
+    /*opacity: 80%;*/
 }
 
 .black:active {
