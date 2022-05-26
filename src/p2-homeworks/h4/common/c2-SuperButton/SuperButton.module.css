@@ -1,7 +1,44 @@
 .default {
-
+    margin: 2px;
+    background: white;
+    border: 3px solid black;
+    color: black;
 }
 
-.red {
-    background: red;
+.default:active {
+    background: black;
+    border: 3px solid black;
+    color: white;
+}
+
+.default:hover {
+    box-shadow: 3px 2px 4px gray;
+}
+
+.black {
+    margin: 2px;
+    background: black;
+    border: 3px solid black;
+    color: white;
+}
+
+.black:hover {
+    box-shadow: 3px 2px 4px gray;
+    opacity: 80%;
+}
+
+.black:active {
+    background: white;
+    border: 3px solid black;
+    color: black;
+}
+
+.default:disabled {
+    opacity: 50%;
+}
+
+.default:disabled:hover {
+    background: white;
+    color: black;
+
 }

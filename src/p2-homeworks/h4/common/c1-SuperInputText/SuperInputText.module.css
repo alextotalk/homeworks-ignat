@@ -1,12 +1,38 @@
+
 .superInput {
+    margin-top: 2px;
+    border: 3px black solid;
 
 }
 
-.errorInput {
-    border: 3px solid lime;
-    background: red;
+
+.onFocus:focus {
+    outline: none;
+    border: 3px black solid;
+}
+
+.onFocus:focus-visible {
+    outline: none;
+    border: 3px black solid;
+    /*border-radius: unset;*/
+    /*outline-color: black;*/
+    background: lightgray;
+    box-shadow: 3px 2px 4px lightgrey;
+}
+
+.errorInput:hover {
+    box-shadow: 3px 2px 4px lightgrey;
 }
 
 .error {
     color: red;
+}
+
+.errorInput {
+    border: 3px red solid;
+}
+
+.errorInput::placeholder {
+    color: gray;
+
 }
